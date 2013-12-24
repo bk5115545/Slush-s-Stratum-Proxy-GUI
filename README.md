@@ -1,16 +1,20 @@
 Slush-s-Stratum-Proxy-GUI
 =========================
 
-Not entirely a GUI but it does make the output of Slush's Stratum Proxy look nicer.
+Not entirely a GUI (yet) but it does make the output of Slush's Stratum Proxy look nicer.
 
-You can use the included mining_proxy.exe or include Slush's from his github.
+You can use the mining_proxy.exe included in the jar or Slush's from his github.
 
 As soon as I figure out how to add some picutres, I will.  
 For now, just know that it does work, it is written in Java, and is completely cross platform.
 
-Run by using the following command:
+Run jar using the following command:
 
-java crypto.currency.Main -o something.something.com -p port
+java -cp proxy_gui.jar -jar proxy_gui.jar -o hostname -p port 
+
+or if you would like to use your version of Slush's proxy, place the mining_proxy.exe next to the jar and then use the following command:
+
+java -jar proxy_gui.jar
 
 Supports all of Slush's command line options as well.  They are automatically passed to Slush's proxy when this program is started.
 
