@@ -1,5 +1,0 @@
-package crypto.currency.workers;
-
-public class WorkerRegistry {
-
-}
