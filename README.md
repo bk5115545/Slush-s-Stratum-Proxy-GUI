@@ -23,6 +23,9 @@ Contact (feel free to contact me)
 bbkoch@ualr.edu
 
 Donation:
+
 BTC 1GU32VVdSwjB7rH4unppJLShU3gknjGRfS
+
 LTC LZJs9cAn6okxroJHZ1RLn1GxtFimZfin7v
+
 I can add other coin addresses if you have an abundance of alt coins.  I'll take anything really...
