@@ -1,0 +1,12 @@
+package crypto.currency.workers;
+
+public class Worker {
+	
+	
+	protected Worker(String name) {
+		
+	}
+	
+	
+
+}

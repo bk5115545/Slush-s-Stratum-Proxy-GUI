@@ -1,0 +1,65 @@
+package crypto.currency;
+
+import java.io.InputStream;
+import java.util.Scanner;
+
+import crypto.currency.workers.Worker;
+import crypto.currency.workers.WorkerRegistry;
+
+public class InputProcessor extends Thread {
+	
+	private InputStream source;
+	
+	public InputProcessor(InputStream in) {
+		source = in;
+	}
+	
+	@Override
+	public void run() {
+		Scanner sc = new Scanner(source);
+		while(Main.running) {
+			try {
+				Thread.currentThread();
+				Thread.sleep(50);
+			} catch (Exception e) {}
+			
+			while(sc.hasNextLine()) {
+				try {
+					String line = sc.nextLine();
+					if(line.equals("ENDING")) break;
+					
+					String[] elements = line.split(" ");
+					
+					if(elements[2].equals("INFO") && elements[4].equals("jobs.submit")) {
+						Main.submitted++;
+					}
+
+					if(elements[6].equals("Worker")) {
+						String name = elements[7].replaceAll("'", "");
+						Worker w = WorkerRegistry.pollWorker(name);
+						if(w == null) w = WorkerRegistry.addWorker(name);
+						w.downloaded++;
+					}
+					else if(elements[6].startsWith("[")) {
+						elements[6] = elements[6].substring(1, elements[6].length()-3);
+						//if(elements[6].equals("0")) continue; //they aren't actually submitted -- maybe
+						Main.exactTime = Integer.parseInt(elements[6]);
+
+						String name = elements[9].replaceAll("'", "");
+						Worker w = WorkerRegistry.pollWorker(name);
+						w.currentDiff = Integer.parseInt(elements[12]);
+						if(elements[10].equals("accepted,")) w.accepted += w.currentDiff;
+						else w.rejected += w.currentDiff;
+						w.submitted++;
+					}
+					
+					
+				} catch(Exception e) {
+					e.printStackTrace();
+				}
+			}
+		}
+		sc.close();
+	}
+
+}

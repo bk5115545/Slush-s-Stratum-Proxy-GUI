@@ -1,0 +1,37 @@
+package crypto.currency.workers;
+
+import java.util.Hashtable;
+
+public class WorkerRegistry {
+	
+	public static Hashtable<String, Worker> table;
+	
+	public static Worker theWorker;
+	
+	public WorkerRegistry() {
+		if(table == null) {
+			table = new Hashtable<String, Worker>();
+		}
+		else {
+			System.err.println("ALREADY HAVE WORKER REGISTRY!");
+		}
+	}
+	
+	public static Worker pollWorker(String name) {
+		if(name == null) return null;
+		return table.get(name);
+	}
+	
+	public static Worker addWorker(String name) {
+		Worker w;
+		if((w=pollWorker(name))!=null) return w;
+		w = new Worker(name);
+		table.put(name, new Worker(name));
+		return w;
+	}
+	
+	public static boolean removeWorker(String name) {
+		return table.remove(name)==null;
+	}
+
+}

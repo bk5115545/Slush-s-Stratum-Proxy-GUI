@@ -1,0 +1,26 @@
+package crypto.currency;
+
+import java.util.Scanner;
+
+public class Main {
+
+	long submitted = 0;
+	long accepted = 0;
+	long rejected = 0;
+	
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		while(sc.hasNextLine()) {
+			String line = sc.nextLine();
+			//action # [time] 
+			String[] elements = line.split(" ");
+			if(elements[3].equals("INFO")) {
+				//disregard for now
+			}
+		}
+
+	}
+
+}

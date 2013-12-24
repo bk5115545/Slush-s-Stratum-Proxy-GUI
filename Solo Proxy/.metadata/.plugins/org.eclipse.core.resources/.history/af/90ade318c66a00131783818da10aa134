@@ -1,0 +1,21 @@
+package crypto.currency.workers;
+
+public class Worker {
+	
+	public String name = "default";
+	public int downloaded = 0;
+	public int submitted = 0;
+	public int accepted = 0;
+	public int rejected = 0;
+	
+	public int currentDiff = 0;
+	
+	public long startTime = 0;
+	protected Worker(String name) {
+		this.name = name;
+		startTime = System.currentTimeMillis();
+	}
+	
+	
+
+}

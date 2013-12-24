@@ -1,0 +1,9 @@
+package crypto.currency.workers;
+
+import java.util.Hashtable;
+
+public class WorkerRegistry {
+	
+	Hashtable<? extends String, Worker> table;
+
+}

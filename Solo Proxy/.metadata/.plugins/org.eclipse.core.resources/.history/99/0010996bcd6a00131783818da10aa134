@@ -1,0 +1,13 @@
+package crypto.currency;
+
+import java.io.InputStream;
+
+public class InputProcessor extends Thread {
+	
+	private InputStream source;
+	
+	public InputProcessor(InputStream in) {
+		source = in;
+	}
+
+}

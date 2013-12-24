@@ -1,0 +1,76 @@
+package crypto.currency;
+
+import java.io.InputStream;
+import java.util.Scanner;
+
+import crypto.currency.workers.Worker;
+import crypto.currency.workers.WorkerRegistry;
+
+public class InputProcessor extends Thread {
+	
+	private InputStream source;
+	public String[] cache = new String[16];
+	
+	public InputProcessor(InputStream in) {
+		source = in;
+	}
+	
+	@Override
+	public void run() {
+		Scanner sc = new Scanner(source);
+		int cacheIndex = 0;
+		while(Main.running) {
+			try {
+				Thread.currentThread();
+				Thread.sleep(50);
+			} catch (Exception e) {}
+			
+			while(sc.hasNextLine()) {
+				String line = null;
+				try {
+					line = sc.nextLine();
+					if(Integer.parseInt(line.charAt(0)+"")>1000) throw new Exception();
+					if(line.equals("ENDING")) break;
+					
+					String[] elements = line.split(" ");
+					
+					
+					if(elements.length > 5 && elements[2].equals("INFO") && elements[4].equals("jobs.submit")) {
+						Main.submitted++;
+					}
+
+					if(elements.length > 7 && elements[6].equals("Worker")) {
+						String name = elements[7].replaceAll("'", "");
+						Worker w = WorkerRegistry.pollWorker(name);
+						if(w == null) w = WorkerRegistry.addWorker(name);
+						w.downloaded++;
+					}
+					else if(elements.length > 10 && elements[6].startsWith("[")) {
+						elements[6] = elements[6].substring(1, elements[6].length()-3);
+						Main.exactTime = Integer.parseInt(elements[6]);
+
+						String name = elements[9].replaceAll("'", "");
+						Worker w = WorkerRegistry.pollWorker(name);
+						w.currentDiff = Integer.parseInt(elements[12]);
+						if(elements[10].equals("accepted,")) {
+							Main.accepted++;
+							w.accepted += w.currentDiff;
+						}
+						else {
+							Main.rejected++;
+							w.rejected += w.currentDiff;
+						}
+						w.submitted++;
+					}
+					cacheIndex = (cacheIndex+1)%=16;
+					
+				} catch(Exception e) {
+					//e.printStackTrace();
+					System.err.println("ERROR AT LINE: " + line);
+					
+				}
+			}
+		}
+		sc.close();
+	}
+}

@@ -1,0 +1,25 @@
+package crypto.currency;
+
+import java.io.InputStream;
+import java.util.Scanner;
+
+public class InputProcessor extends Thread {
+	
+	private InputStream source;
+	
+	public InputProcessor(InputStream in) {
+		source = in;
+	}
+	
+	@Override
+	public void run() {
+		while(true) {
+			try {
+				Thread.currentThread().sleep(50);
+			} catch (Exception e) {}
+			
+			Scanner sc = new Scanner(source);
+		}
+	}
+
+}

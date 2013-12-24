@@ -1,0 +1,10 @@
+package crypto.currency.workers;
+
+public class Worker {
+	
+	//ip address & port
+	//screen name
+	//username
+	//password
+
+}

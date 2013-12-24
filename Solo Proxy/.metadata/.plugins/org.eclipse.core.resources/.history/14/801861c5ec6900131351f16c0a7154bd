@@ -1,0 +1,13 @@
+package crypto.currency.workers;
+
+public class Worker {
+
+	//username
+	
+	protected Worker() {
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,53 @@
+2013-12-21 23:20:39,105 WARNING proxy getwork_listener._on_submit # [0ms] Share from 'bk5115545.1' accepted, diff 5
+2013-12-21 23:20:39,121 INFO proxy jobs.submit # Submitting 86a32f9f
+2013-12-21 23:20:39,121 WARNING proxy getwork_listener._on_submit # [0ms] Share from 'bk5115545.1' accepted, diff 5
+2013-12-21 23:20:39,135 INFO proxy jobs.submit # Submitting 50846414
+2013-12-21 23:20:39,135 WARNING proxy getwork_listener._on_submit # [0ms] Share from 'bk5115545.1' accepted, diff 5
+2013-12-21 23:20:39,401 INFO proxy jobs.submit # Submitting 2a718618
+2013-12-21 23:20:39,401 WARNING proxy getwork_listener._on_submit # [0ms] Share from 'bk5115545.1' accepted, diff 5
+2013-12-21 23:20:39,417 INFO proxy jobs.submit # Submitting d07c1585
+2013-12-21 23:20:39,417 WARNING proxy getwork_listener._on_submit # [0ms] Share from 'bk5115545.1' accepted, diff 5
+2013-12-21 23:20:39,433 INFO proxy jobs.submit # Submitting a4ca25c3
+2013-12-21 23:20:39,510 INFO proxy client_service.handle_event # New job 2da6 for prevhash 8f3f9106, clean_jobs=False
+2013-12-21 23:20:39,634 INFO proxy getwork_listener._on_authorized # Worker 'bk5115545.1' asks for new work
+2013-12-21 23:20:39,634 WARNING proxy getwork_listener._on_submit # [201ms] Share from 'bk5115545.1' accepted, diff 5
+2013-12-21 23:20:39,651 INFO proxy getwork_listener._on_authorized # Worker 'bk5115545.1' asks for new work
+2013-12-21 23:20:39,667 INFO proxy getwork_listener._on_authorized # Worker 'bk5115545.1' asks for new work
+2013-12-21 23:20:39,681 INFO proxy getwork_listener._on_authorized # Worker 'bk5115545.1' asks for new work
+2013-12-21 23:20:39,822 INFO proxy getwork_listener._on_authorized # Worker 'bk5115545.1' asks for new work
+2013-12-21 23:20:39,838 INFO proxy getwork_listener._on_authorized # Worker 'bk5115545.1' asks for new work
+2013-12-21 23:20:39,854 INFO proxy getwork_listener._on_authorized # Worker 'bk5115545.1' asks for new work
+2013-12-21 23:20:40,025 INFO proxy getwork_listener._on_authorized # Worker 'bk5115545.1' asks for new work
+2013-12-21 23:20:40,040 INFO proxy getwork_listener._on_authorized # Worker 'bk5115545.1' asks for new work
+2013-12-21 23:20:40,056 INFO proxy getwork_listener._on_authorized # Worker 'bk5115545.1' asks for new work
+2013-12-21 23:20:40,213 INFO proxy getwork_listener._on_authorized # Worker 'bk5115545.1' asks for new work
+2013-12-21 23:20:40,227 INFO proxy getwork_listener._on_authorized # Worker 'bk5115545.1' asks for new work
+2013-12-21 23:20:40,243 INFO proxy jobs.submit # Submitting bba9a334
+2013-12-21 23:20:40,243 WARNING proxy getwork_listener._on_submit # [0ms] Share from 'bk5115545.1' accepted, diff 5
+2013-12-21 23:20:40,259 INFO proxy getwork_listener._on_authorized # Worker 'bk5115545.1' asks for new work
+2013-12-21 23:20:40,275 INFO proxy jobs.submit # Submitting 6e8a04e8
+2013-12-21 23:20:40,275 WARNING proxy getwork_listener._on_submit # [0ms] Share from 'bk5115545.1' accepted, diff 5
+2013-12-21 23:20:40,400 INFO proxy getwork_listener._on_authorized # Worker 'bk5115545.1' asks for new work
+2013-12-21 23:20:40,414 INFO proxy getwork_listener._on_authorized # Worker 'bk5115545.1' asks for new work
+2013-12-21 23:20:40,430 INFO proxy getwork_listener._on_authorized # Worker 'bk5115545.1' asks for new work
+2013-12-21 23:20:40,447 INFO proxy getwork_listener._on_authorized # Worker 'bk5115545.1' asks for new work
+2013-12-21 23:20:40,555 INFO proxy getwork_listener._on_authorized # Worker 'bk5115545.1' asks for new work
+2013-12-21 23:20:40,555 INFO proxy getwork_listener._on_authorized # Worker 'bk5115545.1' asks for new work
+2013-12-21 23:20:40,571 INFO proxy getwork_listener._on_authorized # Worker 'bk5115545.1' asks for new work
+2013-12-21 23:20:40,805 INFO proxy getwork_listener._on_authorized # Worker 'bk5115545.1' asks for new work
+2013-12-21 23:20:40,821 INFO proxy getwork_listener._on_authorized # Worker 'bk5115545.1' asks for new work
+2013-12-21 23:20:40,836 INFO proxy getwork_listener._on_authorized # Worker 'bk5115545.1' asks for new work
+2013-12-21 23:20:40,914 INFO proxy jobs.submit # Submitting d32d92b7
+2013-12-21 23:20:40,914 WARNING proxy getwork_listener._on_submit # [0ms] Share from 'bk5115545.1' accepted, diff 5
+2013-12-21 23:20:40,930 INFO proxy jobs.submit # Submitting b4049b03
+2013-12-21 23:20:40,930 WARNING proxy getwork_listener._on_submit # [0ms] Share from 'bk5115545.1' accepted, diff 5
+2013-12-21 23:20:41,257 INFO proxy jobs.submit # Submitting 7fd705fd
+2013-12-21 23:20:41,257 WARNING proxy getwork_listener._on_submit # [0ms] Share from 'bk5115545.1' accepted, diff 5
+2013-12-21 23:20:41,928 INFO proxy jobs.submit # Submitting 325c24ec
+2013-12-21 23:20:41,928 WARNING proxy getwork_listener._on_submit # [0ms] Share from 'bk5115545.1' accepted, diff 5
+2013-12-21 23:20:41,960 INFO proxy jobs.submit # Submitting ad966475
+2013-12-21 23:20:41,960 WARNING proxy getwork_listener._on_submit # [0ms] Share from 'bk5115545.1' accepted, diff 5
+2013-12-21 23:20:42,584 INFO proxy jobs.submit # Submitting 34ed5375
+2013-12-21 23:20:42,598 WARNING proxy getwork_listener._on_submit # [0ms] Share from 'bk5115545.1' accepted, diff 5
+2013-12-21 23:20:42,598 INFO proxy jobs.submit # Submitting e090c026
+2013-12-21 23:20:42,598 WARNING proxy getwork_listener._on_submit # [0ms] Share from 'bk5115545.1' accepted, diff 5
